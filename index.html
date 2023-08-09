@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Weather APP</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Weather App</title>
 </head>
-
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="searchs">
-            <form action="">
-                <input type="text" class="city">
-                <input type="button" value="search" class="search">
-            </form>
-        </div>
-        </div>
-        <div class="main"></div>
-    </div>
+<h1>Weather App</h1>
+<form id="weather-form">
+  <input type="text" id="location-input" placeholder="Enter a location" />
+  <button type="submit">Get Weather</button>
+</form>
+<button id="toggle">Toggle °C/°F</button>
+<div id="weather-result"></div>
+  <script src="index.js"></script>
 </body>
-
 </html>
